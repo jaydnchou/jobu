@@ -1,0 +1,33 @@
+{
+	"name": "jobu",
+	"version": "1.0.0",
+	"scripts": {
+		"format:config": "prettier",
+		"format": "npm run format:config -- --write \"**/*.{js,md}\"",
+		"test:format": "npm run format:config -- --list-different \"**/*.{js,md}\"",
+		"test": "npm run test:format",
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"@apollo/react-hooks": "^3.1.3",
+		"@apollo/react-ssr": "^3.1.3",
+		"@githubprimer/octicons-react": "^8.1.0",
+		"apollo-boost": "^0.4.4",
+		"apollo-server-express": "^2.9.9",
+		"body-parser": "^1.18.3",
+		"cookie-session": "^2.0.0-beta.3",
+		"emotion": "^9.2.12",
+		"emotion-server": "^9.2.12",
+		"express": "^4.16.3",
+		"graphql": "^14.5.8",
+		"isomorphic-unfetch": "^3.0.0",
+		"next": "^8.0.0",
+		"next-with-apollo": "^4.3.0",
+		"prop-types": "^15.6.2",
+		"react": "16.8.0",
+		"react-dom": "16.8.0"
+	},
+	"devDependencies": {
+		"prettier": "^1.15.2"
+	}
+}
